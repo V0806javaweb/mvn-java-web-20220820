@@ -40,6 +40,7 @@ public class JPAStudentServlet extends HttpServlet {
 
         Query query = em.createQuery("SELECT s FROM Student s");
        
+        //search result include id、name、age(reference from Student.java)
         List<Student> list = query.getResultList();
         System.out.println("Student Name :");
         for (Student s : list) {
