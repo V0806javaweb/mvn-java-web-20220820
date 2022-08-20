@@ -8,10 +8,13 @@ import javax.persistence.Table;
 @Entity
 @Table(name="suppliers")
 public class Supplier {
+	
 	@Id
+	//rename SUP_ID to supId
 	@Column(name="SUP_ID")
     int supId;
 	
+	//rename SUP_Name to supName
 	@Column(name="SUP_Name")
 	String supName;
 	
