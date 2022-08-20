@@ -34,6 +34,7 @@ public class JPAStudentServlet extends HttpServlet {
 	 * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse response)
 	 */
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		//EntityManagerFactory從mvn20220820的persistence.xml讀取設定內容用於建立物件    
 		EntityManagerFactory emf = Persistence.createEntityManagerFactory("mvn20220820");
         EntityManager em = emf.createEntityManager();
         em.getTransaction().begin();
